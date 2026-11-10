@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>تعلّم تصميم المواقع والتطبيقات</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#FFF7E8;--ink:#000;--soft:rgba(0,0,0,.62);--line:rgba(0,0,0,.9);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--ink:#FFF7E8;--soft:rgba(255,247,232,.65);--line:rgba(255,247,232,.9)}}
+:root[data-theme="dark"]{--bg:#000;--ink:#FFF7E8;--soft:rgba(255,247,232,.65);--line:rgba(255,247,232,.9)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif;line-height:1.8;font-size:17px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+.logo{display:block;fill:var(--ink)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:12px 26px;border-radius:999px;text-decoration:none;font-weight:700;font-size:16px;border:2px solid var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;padding:50px 0 70px}
+h1{font-size:clamp(34px,6.4vw,64px);line-height:1.25;margin:0 0 18px;font-weight:700}
+.hero p{color:var(--soft);max-width:30em;margin:0 0 28px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.flower{width:100%;max-width:340px;margin:0 auto;animation:spin 1.6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes spin{from{transform:rotate(-144deg) scale(.6);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.flower{animation:none}}
+section{padding:56px 0;border-top:2px solid var(--line)}
+h2{font-size:clamp(26px,4.4vw,38px);margin:0 0 26px;line-height:1.35}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.box{border:2px solid var(--line);border-radius:28px;padding:26px}
+.box h3{margin:0 0 10px;font-size:22px}
+.box ul{margin:0;padding:0 20px 0 0;color:var(--soft)}
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:baseline}
+.steps li::before{content:counter(s);flex:none;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:16px;line-height:1}
+.price{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;background:var(--ink);color:var(--bg);border-radius:36px;padding:38px}
+.price .num{font-size:clamp(64px,14vw,112px);font-weight:700;line-height:1}
+.price .cur{font-size:22px;margin-inline-start:8px}
+.price p{margin:10px 0 0;opacity:.8}
+.price .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+footer{padding:36px 0 44px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:var(--soft);font-size:15px;border-top:2px solid var(--line)}
+@media (max-width:720px){.hero{grid-template-columns:1fr;padding-top:24px}.flower{order:-1;max-width:200px}.cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><g id="fl"><path id="p" d="M0 0C-8-20-40-48-31-77C-24-101 8-103 19-80C28-60 11-26 0 0Z"/><use href="#p" transform="rotate(72)"/><use href="#p" transform="rotate(144)"/><use href="#p" transform="rotate(216)"/><use href="#p" transform="rotate(288)"/></g></defs>
+</svg>
+<div class="wrap">
+<nav>
+<a class="brand" href="#top"><svg class="logo" width="34" height="34" viewBox="-85 -110 170 170" aria-hidden="true"><use href="#fl"/></svg><span>Lona</span></a>
+<a class="btn ghost" href="#join">سجّل الآن</a>
+</nav>
+
+<header class="hero" id="top">
+<div>
+<h1>تعلّم تصميم المواقع والتطبيقات من الصفر</h1>
+<p>دورة عملية تبدأ بالفكرة وتنتهي بتصميم كامل تفتخر به وتضيفه إلى أعمالك. تتعلم خطوة بخطوة مع متابعة شخصية.</p>
+<div class="acts"><a class="btn" href="#join">ابدأ بـ 150 ريال</a><a class="btn ghost" href="#learn">ماذا ستتعلم؟</a></div>
+</div>
+<svg class="flower logo" viewBox="-110 -125 220 200" role="img" aria-label="شعار الزهرة"><use href="#fl"/></svg>
+</header>
+
+<section id="learn">
+<h2>ماذا ستتعلم؟</h2>
+<div class="cols">
+<div class="box"><h3>تصميم المواقع</h3><ul><li>تخطيط الصفحات وترتيب المحتوى</li><li>الألوان والخطوط</li><li>التصميم المتجاوب مع الجوال</li><li>تجهيز التصميم للتنفيذ</li></ul></div>
+<div class="box"><h3>تصميم التطبيقات</h3><ul><li>رحلة المستخدم وتدفق الشاشات</li><li>تصميم واجهات الجوال</li><li>النماذج التفاعلية</li><li>تسليم التصميم للمطوّر</li></ul></div>
+</div>
+</section>
+
+<section>
+<h2>كيف تسير الدورة؟</h2>
+<ol class="steps">
+<li>نحدد هدفك ونوع المشروع الذي تريد تصميمه.</li>
+<li>تتعلم الأساسيات بدروس قصيرة وتطبيق مباشر.</li>
+<li>تصمم موقعًا وتطبيقًا كاملين بمراجعة مني.</li>
+<li>تنهي الدورة بمشروع جاهز لعرضه في معرض أعمالك.</li>
+</ol>
+</section>
+
+<section id="join">
+<h2>السعر</h2>
+<div class="price">
+<div><div><span class="num">150</span><span class="cur">ريال</span></div><p>دفعة واحدة، تشمل كل الدروس والمتابعة.</p></div>
+<a class="btn" href="https://wa.me/966580591860?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84%20%D9%81%D9%8A%20%D8%AF%D9%88%D8%B1%D8%A9%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9%20%D9%88%D8%A7%D9%84%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA">سجّل عبر واتساب</a>
+</div>
+</section>
+
+<footer>
+<span style="display:flex;align-items:center;gap:8px"><svg class="logo" width="22" height="22" viewBox="-85 -110 170 170" aria-hidden="true"><use href="#fl"/></svg>Lona</span>
+<span>واتساب: <bdi dir="ltr">0580591860</bdi> · البريد: <bdi dir="ltr">aq12qx@gmail.com</bdi></span>
+</footer>
+</div>
+</body>
+</html>
